@@ -8,17 +8,24 @@ ydl_opts = {
 }
 
 def main():
-    url = input("Вставь ссылку на видео: ").strip()
+    url = input("Paste YouTube URL: ").strip()
 
-    print("Начинаю загрузку...")
+    if not url:
+        print("Error: empty URL!")
+        return
+
+    if "youtube.com" not in url and "youtu.be" not in url:
+        print("Error: invalid YouTube URL!")
+        return
+
+    print("Downloading...")
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
-        print("Готово! Видео сохранено")
-    except Exception as error:
-        print(f"Что-то пошло не так: {error}")
+        print("Done! Video saved.")
+    except Exception as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
-yt-dlp
