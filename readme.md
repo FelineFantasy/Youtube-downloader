@@ -3,49 +3,84 @@
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-Простая утилита для скачивания видео с YouTube, написанная на Python. Вставьте ссылку — получите видео!
+A simple utility for downloading videos from YouTube, written in Python. Paste a link — get the video!
 
-## 📋 Содержание
-- [Описание](#описание)
-- [Как использовать](#как-использовать)
-- [Установка](#установка)
-- [Пример работы](#пример-работы)
-- [Файлы проекта](#файлы-проекта)
-- [Требования](#требования)
-- [Планы по развитию](#планы-по-развитию)
-- [Автор](#автор)
+## 📋 Table of Contents
+- [Description](#description)
+- [How to Use](#how-to-use)
+- [Installation](#installation)
+- [Example Usage](#example-usage)
+- [Project Files](#project-files)
+- [Requirements](#requirements)
+- [Future Plans](#future-plans)
+- [Author](#author)
 
-## 📝 Описание
+## 📝 Description
 
-**YouTube Video Downloader** — это простая консольная программа для скачивания видео с YouTube. Она использует мощную библиотеку `yt-dlp` и автоматически сохраняет видео в наилучшем доступном качестве.
+**YouTube Video Downloader** is a simple console program for downloading videos from YouTube. It uses the powerful `yt-dlp` library and automatically saves videos in the best available quality.
 
-### Особенности:
-- 🚀 **Простота** — вставь ссылку и получи видео
-- 📦 **Компактность** — всего несколько строк кода
-- ⚡ **Скорость** — скачивает видео максимального качества
-- 🛡️ **Безопасность** — обработка ошибок при загрузке
+### Features:
+- 🚀 **Simplicity** — Paste a link and get the video
+- 📦 **Compact** — Just a few lines of code
+- ⚡ **Speed** — Downloads videos in maximum quality
+- 🛡️ **Safety** — Error handling during download
 
-## 🎮 Как использовать
+## 🎮 How to Use
 
-1. Запустите программу
-2. Вставьте ссылку на YouTube видео
-3. Нажмите Enter
-4. Дождитесь сообщения о завершении загрузки
+1. Run the program
+2. Paste a YouTube video link
+3. Press Enter
+4. Wait for the download completion message
 
-Видео сохранится в ту же папку, где находится программа.
+The video will be saved in the same folder as the program.
 
-## ⚙️ Установка
+## ⚙️ Installation
 
-### Вариант 1: Скачать архив
-1. Нажмите зелёную кнопку **"Code"** на этой странице
-2. Выберите **"Download ZIP"**
-3. Распакуйте архив
-4. Установите зависимости: `pip install -r requirements.txt`
-5. Запустите программу: `python YouTube_Downloader.py`
+### Option 1: Download ZIP
+1. Click the green **"Code"** button on this page
+2. Select **"Download ZIP"**
+3. Extract the archive
+4. Install dependencies: `pip install -r requirements.txt`
+5. Run the program: `python YouTube_Downloader.py`
 
-### Вариант 2: Клонировать репозиторий
+### Option 2: Clone repository
 ```bash
-git clone https://github.com/your-username/YouTube_Downloader.git
-cd YouTube_Downloader
+git clone https://github.com/FelineFantasy/Youtube_downloader.git
+cd Youtube_downloader
 pip install -r requirements.txt
 python YouTube_Downloader.py
+```
+
+## 💻 Example Usage
+
+```
+Enter YouTube URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Downloading...
+Download complete!
+```
+
+## 📁 Project Files
+
+```
+Youtube_downloader/
+├── YouTube_Downloader.py  # Main program file
+├── requirements.txt       # Dependencies
+└── README.md              # Documentation
+```
+
+## 📋 Requirements
+
+- Python 3.x
+- yt-dlp
+
+## 🔮 Future Plans
+
+- [ ] Add support for playlists
+- [ ] Audio-only download option
+- [ ] Progress bar during download
+
+## 👤 Author
+
+**FelineFantasy**
+
+License: MIT
