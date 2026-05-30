@@ -21,16 +21,24 @@ A simple utility for downloading videos from YouTube, written in Python. Paste a
 
 ### Features:
 - 🚀 **Simplicity** — Paste a link and get the video
+- 🎯 **Quality selection** — Choose video quality (4K, 1080p, 720p, 480p, 360p, audio)
 - 📦 **Compact** — Just a few lines of code
-- ⚡ **Speed** — Downloads videos in maximum quality
+- ⚡ **Speed** — Downloads videos in selected quality
 - 🛡️ **Safety** — Error handling during download
 
 ## 🎮 How to Use
 
 1. Run the program
 2. Paste a YouTube video link
-3. Press Enter
-4. Wait for the download completion message
+3. Choose video quality (1-6):
+   - 1: Best (up to 4K)
+   - 2: 1080p (Full HD)
+   - 3: 720p (HD)
+   - 4: 480p
+   - 5: 360p
+   - 6: Audio only (M4A)
+4. Press Enter
+5. Wait for the download completion message
 
 The video will be saved in the same folder as the program.
 
@@ -75,8 +83,9 @@ Youtube_downloader/
 
 ## 🔮 Future Plans
 
+- [x] Quality selection ✅
+- [x] Audio-only download option ✅
 - [ ] Add support for playlists
-- [ ] Audio-only download option
 - [ ] Progress bar during download
 
 ## 👤 Author
