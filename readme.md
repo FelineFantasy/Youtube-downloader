@@ -86,7 +86,7 @@ Youtube_downloader/
 - [x] Quality selection ✅
 - [x] Audio-only download option ✅
 - [ ] Add support for playlists
-- [ ] Progress bar during download
+- [x] Progress bar during download
 
 ## 👤 Author
 
