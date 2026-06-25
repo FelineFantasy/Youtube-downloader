@@ -89,7 +89,5 @@ Youtube_downloader/
 - [x] Progress bar during download
 
 ## 👤 Author
-
-**FelineFantasy**
-
-License: MIT
+- **FelineFantasy**
+- **License**: MIT
