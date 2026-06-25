@@ -1,17 +1,27 @@
 import yt_dlp
 
+def progress_hook(d):
+    """Выводит прогресс загрузки."""
+    if d['status'] == 'downloading':
+        progress = d.get('_percent_str', '0%').strip()
+        speed = d.get('_speed_str', '0 MB/s').strip()
+        eta = d.get('_eta_str', '?').strip()
+        print(f"\rЗагрузка: {progress} | Скорость: {speed} | Осталось: {eta}", end="")
+    elif d['status'] == 'finished':
+        print("\nЗагрузка завершена!")
+
 def get_quality_choice():
     """Показывает меню выбора качества и возвращает формат."""
-    print("\nВыберите качество:")
+    print("Выберите качество:")
     print("1. Лучшее (до 4K)")
     print("2. 1080p (Full HD)")
     print("3. 720p (HD)")
     print("4. 480p")
     print("5. 360p")
     print("6. Только аудио (M4A)")
-    
+
     choice = input("Ваш выбор (1-6): ").strip()
-    
+
     formats = {
         "1": "best",
         "2": "best[height<=1080]",
@@ -20,7 +30,7 @@ def get_quality_choice():
         "5": "best[height<=360]",
         "6": "bestaudio[ext=m4a]",
     }
-    
+
     return formats.get(choice, "best")
 
 def main():
@@ -40,6 +50,7 @@ def main():
         'format': format_choice,
         'quiet': True,
         'no_warnings': True,
+        'progress_hooks': [progress_hook],
     }
 
     print("\nЗагрузка...")
