@@ -56,7 +56,7 @@ The video will be saved in the same folder as the program.
 git clone https://github.com/FelineFantasy/Youtube_downloader.git
 cd Youtube_downloader
 pip install -r requirements.txt
-python YouTube_Downloader.py
+python youtube_downloader.py
 ```
 
 ## 💻 Example Usage
