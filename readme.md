@@ -73,7 +73,8 @@ Download complete!
 Youtube_downloader/
 ├── YouTube_Downloader.py  # Main program file
 ├── requirements.txt       # Dependencies
-└── README.md              # Documentation
+├── README.md              # Documentation
+└── .gitignore             # Files and folders to ignore
 ```
 
 ## 📋 Requirements
